@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  //Why does my example I am looking at say "container" instead of "root"? https://reactjs.org/docs/thinking-in-react.html ? I feel like that is really important....
   document.getElementById('root')
 );
 
