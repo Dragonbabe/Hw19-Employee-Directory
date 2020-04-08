@@ -1,0 +1,21 @@
+ [
+    {
+      "name": "Ingrid Bergman",
+      "email": "hallucinations@irish.com",
+      "dob": "09/19/1984",
+      "employed": true
+    },
+    {
+      "name": "Hal Smith",
+      "email": "dude@dude.com",
+      "dob": "09/80/1984",
+      "employed": true
+    },
+    {
+      "name": "George Foreman",
+      "email": "george@yahoo.com",
+      "dob": "09/12/1984",
+      "employed": true
+    }
+   
+   ]
