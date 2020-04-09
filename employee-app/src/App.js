@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import DisplayedEmpInfo from './components/EmployeeTable';
-import SearchBar from './components/SearchBar';
-import FilterableEmpTable from './components/FilterableEmpTable';
+import Form from './components/Form';
+import Header from './components/Header';
+
 
 function App() {
   return (
     <div className="App">
-    <FilterableEmpTable/>
+    <Header/>
+    <Form/>
     </div>
   );
 }
