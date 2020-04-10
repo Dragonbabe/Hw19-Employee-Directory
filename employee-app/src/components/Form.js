@@ -1,4 +1,6 @@
 import React from 'react';
+import ResultTable from './ResultTable';
+import './form.css';
 
 class Form extends React.Component {
     constructor(props) {
@@ -42,7 +44,7 @@ class Form extends React.Component {
         return (
             <div>
                 <p>
-                    Hello {this.state.firstName} {this.state.lName} {this.state.DOB}
+                    Search For: {this.state.firstName} {this.state.lastName} {this.state.DOB}
                 </p>
                 <form className="form-inline" action="/action_page.php" className="form" onSubmit={this.handleFormSubmit}>
                     <label htmlFor="firstName">First Name:</label>
@@ -56,7 +58,7 @@ class Form extends React.Component {
                     <label htmlFor="lastName">Last Name:</label>
                     <input 
                     value={this.state.lastName}
-                    lName="lastName"
+                    name="lastName"
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="Last Name"
@@ -64,11 +66,14 @@ class Form extends React.Component {
                     <label htmlFor="DOB">Date of Birth:</label>
                     <input
                     value={this.state.DOB}
-                    dob="DOB"
+                    name="DOB"
                     onChange={this.handleInputChange}
                     type="text"
                     placeholder="Date of Birth"
                     />
+                    <button onSubmit={this.handleFormSubmit} className="btn btn-primary mt-3">
+                        Search!
+                    </button>
 
                 </form>
             </div>
