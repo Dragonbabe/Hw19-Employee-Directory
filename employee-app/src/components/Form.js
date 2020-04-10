@@ -42,13 +42,13 @@ class Form extends React.Component {
     render() {
         //Each input must have a 'value', a 'name' and an 'onChange' prop     
         return (
-            <div>
+            <div class="form-group">
                 <p>
                     Search For: {this.state.firstName} {this.state.lastName} {this.state.DOB}
                 </p>
                 <form className="form-inline" action="/action_page.php" className="form" onSubmit={this.handleFormSubmit}>
                     <label htmlFor="firstName">First Name:</label>
-                    <input 
+                    <input class="form-control"
                     value={this.state.firstName}
                     name="firstName"
                     onChange={this.handleInputChange}
@@ -56,7 +56,7 @@ class Form extends React.Component {
                     placeholder="First Name"
                     />
                     <label htmlFor="lastName">Last Name:</label>
-                    <input 
+                    <input class="form-control"
                     value={this.state.lastName}
                     name="lastName"
                     onChange={this.handleInputChange}
@@ -64,7 +64,7 @@ class Form extends React.Component {
                     placeholder="Last Name"
                     />
                     <label htmlFor="DOB">Date of Birth:</label>
-                    <input
+                    <input class="form-control"
                     value={this.state.DOB}
                     name="DOB"
                     onChange={this.handleInputChange}
