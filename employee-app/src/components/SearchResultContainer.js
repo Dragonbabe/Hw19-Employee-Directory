@@ -8,7 +8,8 @@ class SearchResultContainer extends React.Component {
         super(props);
         this.state = {
             firstName: ``,
-            results: []
+            results: [],
+            filteredResults: []
         };
     }
 
@@ -20,7 +21,7 @@ class SearchResultContainer extends React.Component {
     searchEmployees(){
         API.search()
         .then(res => {
-            this.setState({ results: res.data.results})
+            this.setState({ results: res.data.results, filteredResults: res.data.results })
             console.log(res);
         })
         .catch(err => console.log(err));
@@ -28,8 +29,13 @@ class SearchResultContainer extends React.Component {
     handleInputChange = event => {
         const name = event.target.name;
         const value = event.target.value;
-        this.setState({
-            [name]: value
+        const filteredResults = this.state.results.filter(result => {
+            return result.name.first.toLowerCase().includes(value.toLowerCase()) 
+     
+         })
+        this.setState( { 
+            [name]: value,
+            filteredResults
         });
     };
     //When the form is submitted, search the employees API for `this.state.search`
@@ -45,7 +51,7 @@ class SearchResultContainer extends React.Component {
                     handleFormSubmit={this.handleFormSubmit}
                     handleInputChange={this.handleInputChange}
                     />
-              <ResultTable results={this.state.results} search={this.state.search}/>      
+              <ResultTable results={this.state.filteredResults} search={this.state.search}/>      
             </div>
         );
     }
