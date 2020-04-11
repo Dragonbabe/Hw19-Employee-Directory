@@ -7,18 +7,18 @@ class SearchResultContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            search: ``,
+            firstName: ``,
             results: []
         };
     }
 
     //When this component mounts search the API for employees
     componentDidMount() {
-        this.searchEmployees(`Employees`);
+        this.searchEmployees();
     }
 
-    searchEmployees = query => {
-        API.search(query)
+    searchEmployees(){
+        API.search()
         .then(res => {
             this.setState({ results: res.data.results})
             console.log(res);
@@ -35,13 +35,13 @@ class SearchResultContainer extends React.Component {
     //When the form is submitted, search the employees API for `this.state.search`
     handleFormSubmit = event => {
         event.preventDefault();
-        this.searchEmployees(this.state.search)
+        console.log(event.target.value)
     };
     render() {
         return (
             <div>
                 <Form
-                    search={this.state.search}
+                    firstName={this.state.firstName}
                     handleFormSubmit={this.handleFormSubmit}
                     handleInputChange={this.handleInputChange}
                     />

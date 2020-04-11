@@ -5,9 +5,10 @@ import moment from 'moment';
 
 function ResultTable(props) {
     let filteredArr = props.results.filter(result => {
-       return result.name.first.includes(props.search) || props.search === result.name.last
-
-    })
+        return result.name.first.includes(props.firstName) 
+ 
+     })
+    let resultsArr = filteredArr.length >0 ? filteredArr : props.results;
     
     return (
         <div>
@@ -18,7 +19,7 @@ function ResultTable(props) {
                         <th>Email</th>
                         <th>DOB</th>
                     </tr>
-                    {filteredArr.map(result => (
+                    {resultsArr.map(result => (
                     <tr>
                         <td><img src={result.picture.large}/></td>
                         <td>{result.name.first} {result.name.last}</td>
