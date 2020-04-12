@@ -31,7 +31,6 @@ class SearchResultContainer extends React.Component {
         const value = event.target.value;
         const filteredResults = this.state.results.filter(result => {
             return result.name.first.toLowerCase().includes(value.toLowerCase())
-
         })
         this.setState({
             [name]: value,
@@ -42,9 +41,14 @@ class SearchResultContainer extends React.Component {
         const value = event.target.value
 
         if (value === 'ascending') {
-            console.log('ascending');
+            const sortedResults = this.state.filteredResults.sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
+
+            console.log('ascending', sortedResults);
         } else {
-            console.log('descending');
+            const sortedResults = this.state.filteredResults.sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
+
+            console.log('descending', sortedResults);
+            
         }
     }
     
