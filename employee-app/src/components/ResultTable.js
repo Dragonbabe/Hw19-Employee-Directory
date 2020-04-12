@@ -17,7 +17,7 @@ function ResultTable(props) {
                 </tr>
                 {props.results.map(result => (
                     <tr>
-                        <td><img src={result.picture.large} /></td>
+                        <td><img src={result.picture.large} alt="person photo" /></td>
                         <td>{result.name.first} {result.name.last}</td>
                         <td>{result.email}</td>
 
