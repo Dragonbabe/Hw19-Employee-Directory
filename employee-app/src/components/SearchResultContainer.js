@@ -38,17 +38,20 @@ class SearchResultContainer extends React.Component {
         });
     };
     handleSelectChange = (event) => {
-        const value = event.target.value
+        const value = event.target.value;
+        let sortedResults = [];
 
         if (value === 'ascending') {
-            const sortedResults = this.state.filteredResults.sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
-
-            console.log('ascending', sortedResults);
-        } else {
-            const sortedResults = this.state.filteredResults.sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
-
-            console.log('descending', sortedResults);
+            sortedResults = this.state.filteredResults.sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
+            this.setState({
+                filteredResults: [...this.state.filteredResults].sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
+            })
             
+        } else {
+            sortedResults = this.state.filteredResults.sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
+            this.setState({
+                filteredResults: [...this.state.filteredResults].sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
+            }) 
         }
     }
     
