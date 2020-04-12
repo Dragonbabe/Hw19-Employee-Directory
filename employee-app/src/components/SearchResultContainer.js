@@ -22,7 +22,6 @@ class SearchResultContainer extends React.Component {
         API.search()
             .then(res => {
                 this.setState({ results: res.data.results, filteredResults: res.data.results })
-                console.log(res);
             })
             .catch(err => console.log(err));
     };
@@ -42,17 +41,14 @@ class SearchResultContainer extends React.Component {
         let sortedResults = [];
 
         if (value === 'ascending') {
-            sortedResults = this.state.filteredResults.sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
-            this.setState({
-                filteredResults: [...this.state.filteredResults].sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
-            })
+            sortedResults = [...this.state.filteredResults].sort((a, b) => a.dob.date.slice(5,7) - b.dob.date.slice(5,7))
             
         } else {
-            sortedResults = this.state.filteredResults.sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
-            this.setState({
-                filteredResults: [...this.state.filteredResults].sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
-            }) 
+            sortedResults = [...this.state.filteredResults].sort((a, b) => b.dob.date.slice(5,7) - a.dob.date.slice(5,7))
         }
+        this.setState({
+            filteredResults: sortedResults
+        })
     }
     
     render() {

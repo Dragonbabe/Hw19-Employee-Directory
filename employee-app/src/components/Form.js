@@ -4,16 +4,16 @@ import './form.css';
 function Form(props) {
     
     return (
-        <div class="form-group">
+        <div className="form-group">
             <label htmlFor="firstName">First Name:</label>
-            <input class="form-control"
+            <input className="form-control"
                 value={props.firstName}
                 name="firstName"
                 onChange={props.handleInputChange}
                 type="text"
                 placeholder="First Name"
             />
-            <label forHtml="sort">Sort Employees By Ascending or Descending Birth Month</label>
+            <label forhtml="sort">Sort Employees By Ascending or Descending Birth Month</label>
             <select 
             onChange={props.handleSelectChange}
             id="sort">
