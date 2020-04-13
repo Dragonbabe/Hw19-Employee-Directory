@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/css/main.5c452c5f.chunk.css",
-    "main.js": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/main.4fa507d2.chunk.js",
-    "main.js.map": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/main.4fa507d2.chunk.js.map",
-    "runtime-main.js": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/runtime-main.b29877a5.js",
-    "runtime-main.js.map": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/runtime-main.b29877a5.js.map",
-    "static/js/2.a0e0fd32.chunk.js": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/2.a0e0fd32.chunk.js",
-    "static/js/2.a0e0fd32.chunk.js.map": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/2.a0e0fd32.chunk.js.map",
-    "index.html": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/index.html",
-    "precache-manifest.6c046802092b7c520801579466cd8008.js": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/precache-manifest.6c046802092b7c520801579466cd8008.js",
-    "service-worker.js": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/service-worker.js",
-    "static/css/main.5c452c5f.chunk.css.map": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/css/main.5c452c5f.chunk.css.map",
-    "static/js/2.a0e0fd32.chunk.js.LICENSE.txt": "/Dragonbabe/Hw19-Employee-Directory/tree/master/employee-app/static/js/2.a0e0fd32.chunk.js.LICENSE.txt"
+    "main.css": "/Hw19-Employee-Directory/static/css/main.5c452c5f.chunk.css",
+    "main.js": "/Hw19-Employee-Directory/static/js/main.2ecb1ddc.chunk.js",
+    "main.js.map": "/Hw19-Employee-Directory/static/js/main.2ecb1ddc.chunk.js.map",
+    "runtime-main.js": "/Hw19-Employee-Directory/static/js/runtime-main.d0a5804c.js",
+    "runtime-main.js.map": "/Hw19-Employee-Directory/static/js/runtime-main.d0a5804c.js.map",
+    "static/js/2.a0e0fd32.chunk.js": "/Hw19-Employee-Directory/static/js/2.a0e0fd32.chunk.js",
+    "static/js/2.a0e0fd32.chunk.js.map": "/Hw19-Employee-Directory/static/js/2.a0e0fd32.chunk.js.map",
+    "index.html": "/Hw19-Employee-Directory/index.html",
+    "precache-manifest.21e8f5610dd5fc3eda5a624bbf51d19d.js": "/Hw19-Employee-Directory/precache-manifest.21e8f5610dd5fc3eda5a624bbf51d19d.js",
+    "service-worker.js": "/Hw19-Employee-Directory/service-worker.js",
+    "static/css/main.5c452c5f.chunk.css.map": "/Hw19-Employee-Directory/static/css/main.5c452c5f.chunk.css.map",
+    "static/js/2.a0e0fd32.chunk.js.LICENSE.txt": "/Hw19-Employee-Directory/static/js/2.a0e0fd32.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b29877a5.js",
+    "static/js/runtime-main.d0a5804c.js",
     "static/js/2.a0e0fd32.chunk.js",
     "static/css/main.5c452c5f.chunk.css",
-    "static/js/main.4fa507d2.chunk.js"
+    "static/js/main.2ecb1ddc.chunk.js"
   ]
 }
