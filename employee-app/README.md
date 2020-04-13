@@ -1,6 +1,6 @@
 ## Welcome To Your Employee Directory!
 
-### `In this application you can search for employees and filter your results by typing in some letters to get employee first names that include those letters. You can usually only get 2 letters in. You can also sort employee's birth months by ascending or descending order,`
+### `In this application you can search for employees and filter your results by typing in some letters to get employee first names that include those letters. You can usually only get 2 letters in. You can also sort employee's birth months by ascending or descending order`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
