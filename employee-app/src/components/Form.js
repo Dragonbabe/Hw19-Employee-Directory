@@ -5,7 +5,7 @@ function Form(props) {
     
     return (
         <div className="form-group">
-            <label htmlFor="firstName">First Name:</label>
+            <label htmlFor="firstName">Type in some letters to see employee's first names that include those letters</label>
             <input className="form-control"
                 value={props.firstName}
                 name="firstName"
